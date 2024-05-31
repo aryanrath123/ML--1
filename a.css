@@ -1,0 +1,235 @@
+body {
+    background-color: #55c2da;
+}
+
+#head {
+    margin-top: 30px;
+    width: 100%;
+    border-right: 5px solid black;
+    display: block;
+    font-size: 5em;
+    letter-spacing: 8px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: center;
+
+    animation: typing 2s steps(27), cursor .4s step-end infinite alternate;
+}
+
+@keyframes cursor {
+    50% {
+        border-color: transparent;
+    }
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
+.h2 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:#e0455f;
+    height: 50px;
+    background-image: linear-gradient(147deg, #a399b2 0%, #4d4855 74%);
+    text-shadow: #55c2da;
+    font-weight: 600;
+    
+    
+}
+
+.controls-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 10%;
+}
+
+#drop-area {
+    width: calc(50% - 10px);
+    height: 300px;
+    padding: 30px;
+    background: #fff;
+    text-align: center;
+    border-radius: 20px;
+    cursor: pointer;
+    border: 3px solid violet;
+    font-size: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#drop-area p {
+    margin-top: 20px;
+    /* Adjust spacing between the image and the text */
+}
+
+#drop-area span {
+    display: block;
+    font-size: 12px;
+    color: #777;
+    margin-top: 15px;
+    /* Adjust spacing between the text and the bottom */
+}
+
+
+
+
+.start-webcam-btn {
+    width: 500px;
+    height: 364.8px;
+    background-color: #dd7973;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 60px;
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.hero {
+    width: 500px;
+    background: linear-gradient(#e7baff, #c2b6d9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    margin-left: 60%;
+    margin-top: 1px;
+
+
+}
+
+#drop-area {
+    width: 500px;
+    height: 300px;
+    padding: 30px;
+    background: #fff;
+    text-align: center;
+    border-radius: 20px;
+    cursor: pointer;
+    border: 3px solid violet;
+    font-size: 35px;
+}
+
+#img-view {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    border: 2px dashed #bbb5ff;
+    background: #f7f8ff;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#img-view img {
+    width: 100px;
+    margin-top: 25px;
+}
+
+#img-view span {
+    display: block;
+    font-size: 12px;
+    color: #777;
+    margin-top: 15px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+}
+
+#webcam-container,
+#image-container {
+    border: 3px solid black;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#webcam-container {
+    margin-left: 20%;
+}
+
+#image-container {
+    margin-right: 20%;
+}
+
+#image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.prediction-container {
+    border: 2px solid red;
+    padding: 10px;
+    font-size: 18px;
+    background-color: #fff;
+    margin-top: 10px;
+}
+
+.prediction-container div:nth-child(1) {
+    background-color: lightgreen;
+    border: 2px solid black;
+}
+
+.prediction-container div:nth-child(2) {
+    background-color: lightseagreen;
+    border: 2px solid black;
+    margin-top: 5px;
+}
+
+.prediction-container div:nth-child(3) {
+    background-color: lightpink;
+    border: 2px solid black;
+    margin-top: 5px;
+}
+
+.prediction-container div:nth-child(4) {
+    background-color: lightslategrey;
+    border: 2px solid black;
+    margin-top: 5px;
+}
+
+.prediction-container div:nth-child(5) {
+    background-color: lightcoral;
+    border: 2px solid black;
+    margin-top: 5px;
+}
+
+.prediction-container div:nth-child(6) {
+    background-color: lightskyblue;
+    border: 2px solid black;
+    margin-top: 5px;
+}
+
+#webcam-label-container,
+#image-label-container {
+    border: 2px solid black;
+    width: fit-content;
+    margin-top: 20px;
+    font-size: 30px;
+}
+
+#webcam-label-container {
+    margin-left: 20%;
+}
+
+#image-label-container {
+    margin-right: 20%;
+}
